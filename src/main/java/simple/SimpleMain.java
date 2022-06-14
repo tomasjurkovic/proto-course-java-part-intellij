@@ -1,5 +1,6 @@
 package simple;
 
+import com.example.options.AnotherDummy;
 import example.simple.SimpleOuterClass;
 
 import java.util.Arrays;
@@ -18,5 +19,12 @@ public class SimpleMain {
                 .build();
 
         System.out.println(message);
+
+        // here we can access this class directly
+        AnotherDummy message2 = AnotherDummy.newBuilder()
+                .setId(123)
+                .build();
+
+        System.out.println(message2);
     }
 }
